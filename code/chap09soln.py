@@ -95,7 +95,7 @@ different models can yield very different results.
 class DiffMeansResample(hypothesis.DiffMeansPermute):
     """Tests a difference in means using resampling."""
     
-    def RunModel(self):
+    def RunModel(self):         
         """Run the model of the null hypothesis.
 
         returns: simulated data
