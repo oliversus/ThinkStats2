@@ -134,7 +134,8 @@ tplt.Cdf(cdf_not_pnig, label='max_height', c='r')
 xs, ps = ts2.RenderNormalCdf(pnig.MAX_HEIGHT.mean(), pnig.MAX_HEIGHT.std(), low=4, high=25)
 tplt.Plot(xs, ps, label='model', color='0.8')
 # tplt.Plot(xs, xs, color='0.5', style='-')
-tplt.Scatter(ps, cdf_pnig.Probs(xs))
+# normal probability plot
+xs, ys = ts2.NormalProbability(pnig.MAX_HEIGHT)
 
 # get probability for Nigra being older than 10, and for other trees
 age = 10
